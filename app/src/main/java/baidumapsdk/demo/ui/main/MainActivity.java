@@ -22,10 +22,17 @@ import java.util.List;
 
 import baidumapsdk.demo.R;
 import baidumapsdk.demo.ui.BaseMapDemo;
+import baidumapsdk.demo.ui.GeoCoderDemo;
+import baidumapsdk.demo.ui.GeometryDemo;
+import baidumapsdk.demo.ui.HeatMapDemo;
 import baidumapsdk.demo.ui.LayersDemo;
+import baidumapsdk.demo.ui.LocationDemo;
 import baidumapsdk.demo.ui.MapControlDemo;
 import baidumapsdk.demo.ui.MapFragmentDemo;
 import baidumapsdk.demo.ui.MultiMapViewDemo;
+import baidumapsdk.demo.ui.OverlayDemo;
+import baidumapsdk.demo.ui.PoiSearchDemo;
+import baidumapsdk.demo.ui.UISettingDemo;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -61,15 +68,32 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         list = new ArrayList<>();
         list.add(new DemoInfo(R.string.demo_title_basemap,
-                R.string.demo_desc_basemap, BaseMapDemo.class));
-        list.add(new DemoInfo(R.string.demo_title_map_fragment,
-                R.string.demo_desc_map_fragment, MapFragmentDemo.class));
+                R.string.demo_desc_basemap,
+                BaseMapDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_map_fragment, R.string.demo_desc_map_fragment,
+                MapFragmentDemo.class));
         list.add(new DemoInfo(R.string.demo_title_layers, R.string.demo_desc_layers,
                 LayersDemo.class));
         list.add(new DemoInfo(R.string.demo_title_multimap,
-                R.string.demo_desc_multimap, MultiMapViewDemo.class));
+                R.string.demo_desc_multimap,
+                MultiMapViewDemo.class));
         list.add(new DemoInfo(R.string.demo_title_control,
-                R.string.demo_desc_control, MapControlDemo.class));
+                R.string.demo_desc_control,
+                MapControlDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_ui, R.string.demo_desc_ui,
+                UISettingDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_location, R.string.demo_desc_location,
+                LocationDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_geometry, R.string.demo_desc_geometry,
+                GeometryDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_overlay, R.string.demo_desc_overlay,
+                OverlayDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_heatmap, R.string.demo_desc_heatmap,
+                HeatMapDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_geocode, R.string.demo_desc_geocode,
+                GeoCoderDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_poi, R.string.demo_desc_poi,
+                PoiSearchDemo.class));
     }
 
     /**

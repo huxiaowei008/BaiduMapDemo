@@ -339,6 +339,9 @@ public class MapControlDemo extends AppCompatActivity {
         super.onDestroy();
         // MapView的生命周期与Activity同步，当activity销毁时需调用MapView.destroy()
         mMapView.onDestroy();
+        if (bdA!=null){
+            bdA.recycle();
+        }
     }
 
 }

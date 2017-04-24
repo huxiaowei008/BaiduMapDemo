@@ -1,4 +1,4 @@
-package baidumapsdk.demo.baidumap;
+package baidumapsdk.demo.baidumap.overlay;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,6 +19,8 @@ import com.baidu.mapapi.search.route.DrivingRouteLine.DrivingStep;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import baidumapsdk.demo.baidumap.overlay.OverlayManager;
 
 /**
  * 用于显示一条驾车路线的overlay，自3.4.0版本起可实例化多个添加在地图中显示，当数据中包含路况数据时，则默认使用路况纹理分段绘制

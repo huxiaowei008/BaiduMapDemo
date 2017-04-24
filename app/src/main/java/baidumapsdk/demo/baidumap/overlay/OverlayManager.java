@@ -1,4 +1,4 @@
-package baidumapsdk.demo.baidumap;
+package baidumapsdk.demo.baidumap.overlay;
 
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BaiduMap.OnPolylineClickListener;

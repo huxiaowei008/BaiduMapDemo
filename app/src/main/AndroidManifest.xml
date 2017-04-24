@@ -65,7 +65,41 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_control"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".ui.UISettingDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_ui"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LocationDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GeometryDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_geometry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OverlayDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_overlay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HeatMapDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_heatmap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GeoCoderDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_geocode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PoiSearchDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_poi"
+            android:screenOrientation="portrait" />
 
         <!--百度地图定位所需服务-->
         <service
