@@ -100,6 +100,11 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_poi"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RoutePlanDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_route"
+            android:screenOrientation="portrait" />
 
         <!--百度地图定位所需服务-->
         <service

@@ -32,6 +32,7 @@ import baidumapsdk.demo.ui.MapFragmentDemo;
 import baidumapsdk.demo.ui.MultiMapViewDemo;
 import baidumapsdk.demo.ui.OverlayDemo;
 import baidumapsdk.demo.ui.PoiSearchDemo;
+import baidumapsdk.demo.ui.RoutePlanDemo;
 import baidumapsdk.demo.ui.UISettingDemo;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
                 GeoCoderDemo.class));
         list.add(new DemoInfo(R.string.demo_title_poi, R.string.demo_desc_poi,
                 PoiSearchDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_route, R.string.demo_desc_route,
+                RoutePlanDemo.class));
     }
 
     /**
