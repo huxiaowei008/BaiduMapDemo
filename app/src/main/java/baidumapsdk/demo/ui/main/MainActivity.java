@@ -22,6 +22,8 @@ import java.util.List;
 
 import baidumapsdk.demo.R;
 import baidumapsdk.demo.ui.BaseMapDemo;
+import baidumapsdk.demo.ui.BusLineSearchDemo;
+import baidumapsdk.demo.ui.DistrictSearchDemo;
 import baidumapsdk.demo.ui.GeoCoderDemo;
 import baidumapsdk.demo.ui.GeometryDemo;
 import baidumapsdk.demo.ui.HeatMapDemo;
@@ -97,6 +99,10 @@ public class MainActivity extends AppCompatActivity {
                 PoiSearchDemo.class));
         list.add(new DemoInfo(R.string.demo_title_route, R.string.demo_desc_route,
                 RoutePlanDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_districsearch, R.string.demo_desc_districsearch,
+                DistrictSearchDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_bus, R.string.demo_desc_bus,
+                BusLineSearchDemo.class));
     }
 
     /**
