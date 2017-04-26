@@ -32,9 +32,11 @@ import baidumapsdk.demo.ui.LocationDemo;
 import baidumapsdk.demo.ui.MapControlDemo;
 import baidumapsdk.demo.ui.MapFragmentDemo;
 import baidumapsdk.demo.ui.MultiMapViewDemo;
+import baidumapsdk.demo.ui.OfflineDemo;
 import baidumapsdk.demo.ui.OverlayDemo;
 import baidumapsdk.demo.ui.PoiSearchDemo;
 import baidumapsdk.demo.ui.RoutePlanDemo;
+import baidumapsdk.demo.ui.ShareDemo;
 import baidumapsdk.demo.ui.UISettingDemo;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -103,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
                 DistrictSearchDemo.class));
         list.add(new DemoInfo(R.string.demo_title_bus, R.string.demo_desc_bus,
                 BusLineSearchDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_share, R.string.demo_desc_share,
+                ShareDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_offline, R.string.demo_desc_offline,
+                OfflineDemo.class));
     }
 
     /**

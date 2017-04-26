@@ -114,6 +114,20 @@
             android:name=".ui.BusLineSearchDemo"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_bus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ShareDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_share"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ShareDemoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_share"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.OfflineDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_offline"
             android:screenOrientation="portrait"/>
 
         <!--百度地图定位所需服务-->
