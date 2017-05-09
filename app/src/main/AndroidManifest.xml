@@ -129,6 +129,11 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_offline"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.MarkerClusterDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_marker_cluster_demo"
+            android:screenOrientation="portrait" />
 
         <!--百度地图定位所需服务-->
         <service

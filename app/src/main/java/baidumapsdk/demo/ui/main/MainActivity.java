@@ -31,6 +31,7 @@ import baidumapsdk.demo.ui.LayersDemo;
 import baidumapsdk.demo.ui.LocationDemo;
 import baidumapsdk.demo.ui.MapControlDemo;
 import baidumapsdk.demo.ui.MapFragmentDemo;
+import baidumapsdk.demo.ui.MarkerClusterDemo;
 import baidumapsdk.demo.ui.MultiMapViewDemo;
 import baidumapsdk.demo.ui.OfflineDemo;
 import baidumapsdk.demo.ui.OverlayDemo;
@@ -109,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
                 ShareDemo.class));
         list.add(new DemoInfo(R.string.demo_title_offline, R.string.demo_desc_offline,
                 OfflineDemo.class));
+        list.add(new DemoInfo(R.string.demo_title_cluster, R.string.demo_desc_cluster,
+                MarkerClusterDemo.class));
     }
 
     /**
