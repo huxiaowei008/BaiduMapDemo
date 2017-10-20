@@ -43,8 +43,9 @@ public class LocationHelper {
     public boolean setLocationOption(LocationClientOption option) {
         boolean isSuccess = false;
         if (option != null) {
-            if (client.isStarted())
+            if (client.isStarted()) {
                 client.stop();
+            }
             DIYOption = option;
             client.setLocOption(option);
         }
@@ -101,7 +102,6 @@ public class LocationHelper {
             }
         }
     }
-
 
 
     public boolean requestHotSpotState() {

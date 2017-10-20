@@ -133,10 +133,12 @@ public class OverlayDemo extends AppCompatActivity {
         //设置 Marker 拖拽事件监听者
         mBaiduMap.setOnMarkerDragListener(new BaiduMap.OnMarkerDragListener() {
             //Marker 被拖拽的过程中。
+            @Override
             public void onMarkerDrag(Marker marker) {
             }
 
             //Marker 拖拽结束
+            @Override
             public void onMarkerDragEnd(Marker marker) {
                 Toast.makeText(OverlayDemo.this,
                         "拖拽结束，新位置：" + marker.getPosition().latitude + ", "
@@ -145,6 +147,7 @@ public class OverlayDemo extends AppCompatActivity {
             }
 
             //开始拖拽 Marker
+            @Override
             public void onMarkerDragStart(Marker marker) {
             }
         });
@@ -184,6 +187,7 @@ public class OverlayDemo extends AppCompatActivity {
                     button.setText("更改图标");
                     button.setTextColor(Color.BLACK);
                     button.setOnClickListener(new View.OnClickListener() {
+                        @Override
                         public void onClick(View v) {
                             marker.setIcon(bd);
                             mBaiduMap.hideInfoWindow();
@@ -195,6 +199,7 @@ public class OverlayDemo extends AppCompatActivity {
                     button.setText("删除");
                     button.setTextColor(Color.BLACK);
                     button.setOnClickListener(new View.OnClickListener() {
+                        @Override
                         public void onClick(View v) {
                             marker.remove();
                             mBaiduMap.hideInfoWindow();

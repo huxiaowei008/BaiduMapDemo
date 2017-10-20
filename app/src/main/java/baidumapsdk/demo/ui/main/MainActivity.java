@@ -165,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public class SDKReceiver extends BroadcastReceiver {
 
+        @Override
         public void onReceive(Context context, Intent intent) {
             String s = intent.getAction();
             Log.d(TAG, "action: " + s);

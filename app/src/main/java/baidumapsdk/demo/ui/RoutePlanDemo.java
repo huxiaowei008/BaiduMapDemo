@@ -182,6 +182,7 @@ public class RoutePlanDemo extends AppCompatActivity {
                                 }
                             });
                             myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
+                                @Override
                                 public void onItemClick(int position) {
                                     route = nowResultwalk.getRouteLines().get(position);
                                     WalkingRouteOverlay overlay = new MyWalkingRouteOverlay(mBaidumap);
@@ -243,6 +244,7 @@ public class RoutePlanDemo extends AppCompatActivity {
                                 }
                             });
                             myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
+                                @Override
                                 public void onItemClick(int position) {
 
                                     route = nowResultransit.getRouteLines().get(position);
@@ -306,6 +308,7 @@ public class RoutePlanDemo extends AppCompatActivity {
                             }
                         });
                         myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
+                            @Override
                             public void onItemClick(int position) {
 
                                 MyMassTransitRouteOverlay overlay = new MyMassTransitRouteOverlay(mBaidumap);
@@ -362,6 +365,7 @@ public class RoutePlanDemo extends AppCompatActivity {
                                 }
                             });
                             myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
+                                @Override
                                 public void onItemClick(int position) {
                                     route = nowResultdrive.getRouteLines().get(position);
                                     DrivingRouteOverlay overlay = new MyDrivingRouteOverlay(mBaidumap);
@@ -428,6 +432,7 @@ public class RoutePlanDemo extends AppCompatActivity {
                                 }
                             });
                             myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
+                                @Override
                                 public void onItemClick(int position) {
                                     route = nowResultbike.getRouteLines().get(position);
                                     BikingRouteOverlay overlay = new MyBikingRouteOverlay(mBaidumap);

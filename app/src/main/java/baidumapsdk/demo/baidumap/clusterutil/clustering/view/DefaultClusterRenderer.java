@@ -324,6 +324,7 @@ public class DefaultClusterRenderer<T extends ClusterItem> implements
                     new SphericalMercatorProjection(256 * Math.pow(2, Math.min(zoom, mZoom)));
         }
 
+        @Override
         @SuppressLint("NewApi")
         public void run() {
             if (clusters.equals(DefaultClusterRenderer.this.mClusters)) {
