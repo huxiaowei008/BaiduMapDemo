@@ -1,8 +1,10 @@
 package baidumapsdk.demo.baidumap;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 
 import com.baidu.location.BDLocation;
@@ -12,6 +14,7 @@ import com.baidu.mapapi.navi.BaiduMapAppNotSupportNaviException;
 import com.baidu.mapapi.navi.BaiduMapNavigation;
 import com.baidu.mapapi.navi.NaviParaOption;
 import com.baidu.mapapi.utils.OpenClientUtil;
+import com.modoutech.wisdomparking.baidumap.BNReadlyActivity;
 
 import java.util.List;
 
@@ -25,6 +28,15 @@ public class BaiduUtils {
     public final static String CoorType_BD09LL = "bd09ll";
     public final static String CoorType_BD09MC = "bd09";
     public static BDLocation location = new BDLocation();
+
+    public static void startInNavi(Activity activity, LatLng start, LatLng end, String startName, String endName) {
+        Intent intent = new Intent(activity, BNReadlyActivity.class);
+        intent.putExtra("start", start);
+        intent.putExtra("end", end);
+        intent.putExtra("startName", startName);
+        intent.putExtra("endName", endName);
+        activity.startActivity(intent);
+    }
 
     /**
      * 启动百度地图导航(Native)
